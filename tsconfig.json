@@ -1,0 +1,86 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "jsx": "preserve",
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "moduleResolution": "node",
+        "allowJs": true,
+        "noEmit": true,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "baseUrl": ".",
+        "paths": {
+            "@core/*": [
+                "./src/core/*"
+            ],
+            "@/*": [
+                "./src/*"
+            ],
+            "@view/*": [
+                "./src/view/*"
+            ],
+            "@components/*": [
+                "./src/view/components/*"
+            ],
+            "@constants/*": [
+                "./src/view/constants/*"
+            ],
+            "@hooks/*": [
+                "./src/view/hooks/*"
+            ],
+            "@images/*": [
+                "./src/view/images/*"
+            ],
+            "@layout/*": [
+                "./src/view/layout/*"
+            ],
+            "@pages/*": [
+                "./src/view/pages/*"
+            ],
+            "@plugin/*": [
+                "./src/view/plugin/*"
+            ],
+            "@states/*": [
+                "./src/view/states/*"
+            ],
+            "@styles/*": [
+                "./src/view/styles/*"
+            ],
+            "@types/*": [
+                "./src/view/types/*"
+            ],
+            "@utils/*": [
+                "./src/view/utils/*"
+            ],
+            "@common/*": [
+                "./src/core/common/*"
+            ],
+            "@dependencyInjection/*": [
+                "./src/core/dependencyInjection/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "./**/**/*.ts"
+    ]
+}

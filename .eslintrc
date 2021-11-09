@@ -1,0 +1,106 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier"
+  ],
+  "plugins": ["prettier", "react", "@typescript-eslint", "eslint-plugin-prettier", "import"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "no-else-return": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@react*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@core",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@core/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/state/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/layout/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/constants/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/types/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/hooks/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/utils/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@view/components/**",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroupsExcludedImportTypes": ["react", "@react"]
+      }
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ]
+  }
+}
