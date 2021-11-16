@@ -1,11 +1,8 @@
 import { useState, forwardRef, cloneElement, isValidElement } from 'react'
 import { createPortal } from 'react-dom'
 
-// hooks
-import useForkRef from '@/view/hooks/useForkRef'
 import useEnhancedEffect from '@/view/hooks/useEnhancedEffect'
-
-// utils
+import useForkRef from '@/view/hooks/useForkRef'
 import setRef from '@/view/utils/shared/setRef'
 
 export interface PortalProps {

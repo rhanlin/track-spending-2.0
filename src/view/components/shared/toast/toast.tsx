@@ -1,14 +1,10 @@
 import { useState, useRef, HTMLAttributes } from 'react'
+
 import tw from 'twin.macro'
 
-// components
 import Button from '@/view/components/shared/button'
-
-// hooks
 import useEnhancedEffect from '@/view/hooks/useEnhancedEffect'
-
-// states
-import { useAppDispatch } from '@/view/states/hooks'
+import { useAppDispatch } from '@/view/states/hook'
 import { removeToast } from '@/view/states/toast'
 
 export interface Toast {
